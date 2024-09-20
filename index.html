@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+</head>
+
+<body>
+  <img src="imgs/logo_dzti.png" alt="logo" width="64px">
+  <h1>SISTEMAS</h1>
+
+  <h2>Kabar</h2>
+  <img src="imgk/logo.png" alt="logo" width="64px">
+  <form action="/kabar_validateUser" method="post">
+    <label for="input_cuser">current user:</label><br>
+    <input type="text" id="input_cuser" name="cuser" value="navigator"><br>
+
+    <label for="input_autkey">autkey:</label><br>
+    <input type="text" id="input_autkey" name="autkey" value="0c402ba774c0a28f4343236bff6b07a9202cb962ac59075b964b07152d234b70"><br>
+
+    <label for="input_user">user do sistema (e-mail):</label><br>
+    <input type="text" id="input_user" name="user" value="divisaozeroti@gmail.com"><br>
+
+    <label for="input_pwd">senha:</label><br>
+    <input type="text" id="input_pwd" name="pwd" value="123">
+
+    <input type="submit" value="Autenticar Usuário">
+  </form>
+  
+  <h2>Sistema 2</h2>
+  <img src="imgs/logo_sistema.png" alt="logo" width="64px">
+  <form action="/kabarpost2" method="post">
+    <label for="input_cuser">current user:</label><br>
+    <input type="text" id="input_cuser" name="cuser" value="roger@localhost"><br>
+
+    <label for="input_autkey">autkey:</label><br>
+    <input type="text" id="input_autkey" name="autkey" value="250cf8b51c773f3f8dc8b4be867a9a02"><br>
+
+    <input type="submit" value="conectar em Sistema 2">
+  </form>
+
+  <h2>Sistema 3</h2>
+  <img src="imgs/logo_sistema.png" alt="logo" width="64px">
+  <form action="/kabarpost3?id=99" method="post">
+    <input type="submit" value="conectar em Sistema 3">
+  </form>
+
+</body>
+</html>
